@@ -3,3 +3,11 @@ vscode:
     - octref.vetur@0.24.0:wQwUWmMBrV2Y+ZN1GPaapg==
     - esbenp.prettier-vscode@4.4.0:ubt94/6inr3IuwPbaezdeQ==
     - dbaeumer.vscode-eslint@2.1.3:K+J3DJv7s2jzfkldxxEUvg==
+
+tasks:
+  - init: npm install
+    command: npm run serve
+    
+ports:
+  - port: 8080
+    onOpen: open-preview
