@@ -1,7 +1,7 @@
 {
   "name": "twitter-card",
   "version": "0.1.0",
-  "author": "",
+  "author": "Dedicio Coelho",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
