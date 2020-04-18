@@ -1,7 +1,7 @@
 {
   "name": "twitter-card",
   "version": "0.1.0",
-  "author": "",
+  "author": "Marcos Henrique Stuber Dreveck",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
