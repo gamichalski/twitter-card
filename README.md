@@ -1,4 +1,4 @@
-# twitter-colaborativo
+# twitter-card
 
 ## Project setup
 ```

@@ -1,11 +1,9 @@
 <template>
-  <div id="app">
-    <router-view />
-  </div>
+  <iframe v-if="server" :src="server.domain" />
 </template>
 
 <script>
-import { serverRealTimeValues } from "./utils/register.js";
+import { serverRealTimeValues } from "../utils/register.js";
 
 export default {
   name: "App",
@@ -23,11 +21,7 @@ export default {
 </script>
 
 <style>
-html,
-body,
-iframe,
-#app {
-  height: 100%;
-  overflow: hidden;
+iframe {
+  width: 100vw;
 }
 </style>
