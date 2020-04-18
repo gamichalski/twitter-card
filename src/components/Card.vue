@@ -29,7 +29,6 @@
                         <span class="tag is-primary is-light">bulma</span> 
                         <span class="tag is-primary is-light">delphi</span>
                     </div>
-                    <time datetime="2020-04-18">16:03 - 18 de Abril de 2020</time>
                 </div>
             </div>
         </div>
