@@ -5,11 +5,7 @@
         <div class="media">
           <div class="media-left">
             <figure class="image is-64x64">
-              <img
-                class="is-rounded"
-                src="https://i.ya-webdesign.com/images/avatar-png-1.png"
-                alt="Avatar"
-              />
+              <img class="is-rounded" :src="avatar" alt="Avatar" />
             </figure>
           </div>
           <div class="header-content">
@@ -41,6 +37,7 @@ export default {
   name: "Card",
   data(){
       return{
+          avatar: "https://i.ya-webdesign.com/images/avatar-png-1.png",
           nome: "Washington Banczynski",
           idade: 31,
           endereco: "Joinville-SC",
