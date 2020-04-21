@@ -9,27 +9,22 @@
         </figure>
       </div>
       <div class="media-content">
-        <p class="title is-4 is-marginless">Gean Farias</p>
+        <p class="title is-4 is-marginless">{{nome}}</p>
         <p class="subtitle is-6 is-marginless">
-            24 anos, Joinville - SC
+            {{idade}} anos, {{cidade}} - {{estado}}
         </p>
         <p class="subtitle is-6">
-            <a href="https://twiiter.com/migoseutonto" target="_blank">@migoseutonto</a>
+            <a :href="twitterUserLink" target="_blank">@{{twitterUser}}</a>
             ||
-            <a href="mailto:geab@ocubomagi.co" target="_blank">gean@ocubomagi.co</a>
+            <a v-bind:href="mailtoInfo" target="_blank">{{email}}</a>
         </p>
       </div>
     </div>
 
     <div class="content">
-      Desenvolvedor frontend, formando em Ciência da computação e amante das comidas do norte (em especial de Manaus).
+        {{descricao}}
       <div class="tags">
-          <span class="tag is-dark">#scss</span>
-          <span class="tag is-dark">#responsive</span>
-          <span class="tag is-dark">#html5</span>
-          <span class="tag is-dark">#vue</span>
-          <span class="tag is-dark">#js</span>
-          <span class="tag is-dark">#cozinheiro</span>
+          <span class="tag is-dark" v-for="(tag, index) in tags" :key="index">{{tag}}</span>
       </div>
     </div>
   </div>
@@ -39,7 +34,29 @@
 
 <script>
 export default {
-  name: "Card"
+  name: "Card",
+  data(){
+      return{
+          nome: "Gean Farias",
+          idade: "24",
+          cidade: "Joinville",
+          estado: "SC",
+          email: "gean@ocubomagi.co",
+          mailtoInfo: "mailto:gean@ocubomagi.co",
+          twitterUser: "migoseutonto",
+          twitterUserLink: "https://twitter.com/migoseutonto",
+          descricao: "Desenvolvedor frontend, formando em Ciência da computação e amante das comidas do norte (em especial de Manaus).",
+          tags: 
+          [
+              "#scss",
+              "#responsive",
+              "#html5",
+              "#vue",
+              "#js",
+              "#cozinheiro"
+          ]
+      }
+  }
 };
 </script>
 
